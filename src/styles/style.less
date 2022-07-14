@@ -1,161 +1,165 @@
 @font-face {
-    font-family: "Karla";
-    src: url("../assets/fonts/Karla/Karla-VariableFont_wght.ttf") format("truetype");
+	font-family: "Karla";
+	src: url("../assets/fonts/Karla/Karla-VariableFont_wght.ttf")
+		format("truetype");
 }
 
 @font-face {
-    font-family: "Inter";
-    src: url("../assets/fonts/Inter/Inter-VariableFont.ttf") format("truetype");
+	font-family: "Inter";
+	src: url("../assets/fonts/Inter/Inter-VariableFont.ttf") format("truetype");
 }
 
 * {
-    margin: 0;
+	margin: 0;
 }
 
 #app {
-    margin: 0 50px;
+	margin: 0 50px;
 }
 
 h1 {
-    font-family: 'Karla';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 40px;
-    margin-top: 75px;
-    margin-bottom: 10px;
+	font-family: "Karla";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 40px;
+	margin-top: 75px;
+	margin-bottom: 10px;
 }
 
 p {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 50px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	margin-bottom: 50px;
 }
 
 input {
-    margin-left: 15px;
+	margin-left: 15px;
 }
 
 label {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
 }
 
 button {
-    cursor: pointer;
-    border: none;
+	cursor: pointer;
+	border: none;
 }
 
 #color-mode {
-    margin: 10px;
-    width: 48px;
-    height: 48px;
-    background: none;
-    border: none;
+	margin: 10px;
+	width: 48px;
+	height: 48px;
+	background: none;
+	border: none;
 }
 
 #generate-button {
-    padding: 10px 15px;
-    margin-bottom: 35px;
-    border-radius: 6px;
-    width: 191px;
-    height: 42px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+	padding: 10px 15px;
+	margin-bottom: 35px;
+	border-radius: 6px;
+	width: 191px;
+	height: 42px;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .password {
-    width: 211px;
-    height: 39px;
-    border-radius: 6px;
-    margin-top: 35px;
-    margin-right: 24px;
-    padding: 3px 15px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
+	width: 211px;
+	height: 39px;
+	border-radius: 6px;
+	margin-top: 35px;
+	margin-right: 24px;
+	padding: 3px 15px;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
 }
 
 section {
-    display: inline;
-    align-items: center;
+	display: inline;
+	align-items: center;
 }
 
 #password-length {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    width: 35px;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	width: 35px;
 }
 
 .dark {
-    background-color: #1F2937;
-    h1 {
-        color: #FFF;
-    }
+	background-color: #1f2937;
 
-    #color-mode {
-        filter: invert();
-    }
+	h1 {
+		color: #fff;
+	}
 
-    p, label {
-        color: #D5D4D8;;
-    }
+	#color-mode {
+		filter: invert();
+	}
 
-    hr {
-        border: 1px solid #2F3E53;
-    }
+	p,
+	label {
+		color: #d5d4d8;
+	}
 
-    span {
-        color: #4ADF86;
-    }
+	hr {
+		border: 1px solid #2f3e53;
+	}
 
-    #generate-button {
-        background: #10B981;
-        color: #FFF;
-    }
+	span {
+		color: #4adf86;
+	}
 
-    .password {
-        background-color: #273549;
-        color: #55F991;
-    }
-    
+	#generate-button {
+		background: #10b981;
+		color: #fff;
+	}
+
+	.password {
+		background-color: #273549;
+		color: #55f991;
+	}
 }
 
 .light {
-    background-color: #ECFDF5;
-    h1 {
-        color: #2B283A;
-    }
+	background-color: #ecfdf5;
 
-    p, label {
-        color: #6B7280;
-    }
+	h1 {
+		color: #2b283a;
+	}
 
-    hr {
-        border: 1px solid #D5D4D8;
-    }
-    span {
-        color: #6EE7B7;
-    }
+	p,
+	label {
+		color: #6b7280;
+	}
 
-    #generate-button {
-        background: #6EE7B7;
-        color: #374151;
-    }
+	hr {
+		border: 1px solid #d5d4d8;
+	}
+	span {
+		color: #6ee7b7;
+	}
 
-    .password {
-        background-color: #6B7280;
-        color: #F9FAFB;
-    }
+	#generate-button {
+		background: #6ee7b7;
+		color: #374151;
+	}
+
+	.password {
+		background-color: #6b7280;
+		color: #f9fafb;
+	}
 }

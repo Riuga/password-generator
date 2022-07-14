@@ -1,34 +1,35 @@
 export function generatePasswords(characters) {
-    const useSpecial = document.getElementById("use-special").checked;
-    const passwordLength = document.getElementById("password-length").value;
-    const firstPasswordElement = document.getElementById("first-password");
-    const secondPasswordElement = document.getElementById("second-password");
-    let firstPassword = "";
-    let secondPassword = "";
-    let arrayMaxIndex = characters.indexOf("9");
-    
-    if(useSpecial) {
-        arrayMaxIndex = characters.length;
-    }
+	const useSpecial = document.querySelector("#use-special").checked;
+	const passwordLength = document.querySelector("#password-length").value;
+	const firstPasswordElement = document.querySelector("#first-password");
+	const secondPasswordElement = document.querySelector("#second-password");
+	let firstPassword = "";
+	let secondPassword = "";
+	let arrayMaxIndex = characters.indexOf("9");
 
-    for (let i = 0; i < passwordLength; i++) {
-        firstPassword += returnRandomChar(characters, arrayMaxIndex);
-        secondPassword += returnRandomChar(characters, arrayMaxIndex);
-    }
+	if (useSpecial) {
+		arrayMaxIndex = characters.length;
+	}
 
-    firstPasswordElement.textContent = firstPassword;
-    secondPasswordElement.textContent = secondPassword;
+	for (let i = 0; i < passwordLength; i++) {
+		firstPassword += returnRandomChar(characters, arrayMaxIndex);
+		secondPassword += returnRandomChar(characters, arrayMaxIndex);
+	}
+
+	firstPasswordElement.textContent = firstPassword;
+	secondPasswordElement.textContent = secondPassword;
 }
 
 export function returnRandomChar(characters, length) {
-    return characters[Math.floor(Math.random() * length)];
+	return characters[Math.floor(Math.random() * length)];
 }
 
 export function copyText(id) {
-    const text = document.querySelector(id);
-    let textValue = text.textContent;
-    navigator.clipboard.writeText(textValue);
-    text.textContent = "Copied to clipboard";
-    setTimeout(() =>{text.textContent = textValue;}, 300);
+	const text = document.querySelector(id);
+	const textValue = text.textContent;
+	navigator.clipboard.writeText(textValue);
+	text.textContent = "Copied to clipboard";
+	setTimeout(() => {
+		text.textContent = textValue;
+	}, 300);
 }
-
